@@ -53,21 +53,31 @@ function App() {
 
       {isOpen && (
         <div className='md:hidden flex flex-col items-center mb-[50px] gap-4 py-4 bg-white shadow-lg'>
+            <Link to={"/"}>
             <h1 className='text-gray-900 border border-transparent hover:border-t-black hover:border-b-black duration-300 hover:text-black cursor-pointer'>
               MAIN
             </h1>
+          </Link>
+          <Link to={"/gallery"}>
             <h1 className='text-gray-900 border border-transparent hover:border-t-black hover:border-b-black duration-300 hover:text-black cursor-pointer'>
               GALLERY
             </h1>
+          </Link>
+          <Link to={"/projects"}>
             <h1 className='text-gray-900 border border-transparent hover:border-t-black hover:border-b-black duration-300 hover:text-black cursor-pointer'>
               PROJECTS
             </h1>
+          </Link>
+          <Link to={"/certifications"}>
             <h1 className='text-gray-900 border border-transparent hover:border-t-black hover:border-b-black duration-300 hover:text-black cursor-pointer'>
               CERTIFICATIONS
             </h1>
+          </Link>
+          <Link to={"/contacts"}>
             <h1 className='text-gray-900 border border-transparent hover:border-t-black hover:border-b-black duration-300 hover:text-black cursor-pointer'>
               CONTACTS
             </h1>
+          </Link>
         </div>
       )}
     </header>
